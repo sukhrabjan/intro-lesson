@@ -93,6 +93,7 @@ margin: 80px 144px;
 
 .site-button {
   border: none;
+  cursor: pointer;
   width: 100%;
   margin-top: 0;
   max-width: 570px;
@@ -158,6 +159,8 @@ margin: 80px 144px;
   border-right: none;
   font-family: Inter;
   font-size: 18px;
+  color: #555;
+
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -234,6 +237,7 @@ margin: 80px 144px;
   max-width: 450px;
   border: 0;
   margin-top: 0;
+  cursor: pointer;
   margin-bottom: 8px;
   padding: 20px 149px;
   border-radius: 10px;
@@ -261,6 +265,7 @@ margin: 80px 144px;
   color: #F03535;
   margin-top: 0;
   font-family: Inter;
+    cursor: pointer;
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
