@@ -24,16 +24,29 @@
       <a class="site-button">Try it free 7 days, <span class="site-another-button">then$20/mo</span></a>
     </header>
     <div class="sign-departmant">
-      <div class="sign-header">
-        <h3 class="sign-up">Sign up for the course and get free 7 days</h3>
-        <input class="sign-name" type="text" name="Name" placeholder="Name">
-        <input class="sign-last-name" type="text" name="Last Name" placeholder="Last Name">
-        <input class="sign-email" type="text" name="Email Address" placeholder="Email Address">
-            <input class="sign-password" type="text" name="Password" placeholder="Password">
-    
-      </div>
+
+      <form class="sign-header">
+        <h3   class="sign-up">Sign up for the course and get free 7 days</h3>
+        <div class="input-wrapper">
+          <input class="input sign-name" type="text" name="Name" placeholder="Name" required>
+          <span class="sign-text">First Name cannot be empty</span>
+        </div>
+        <div  class="input-wrapper">
+          <input class="input sign-last-name" type="text" name="Last Name" placeholder="Last Name" required>
+          <span class="sign-text">Last Name cannot be empty</span>
+        </div>
+        <div class="input-wrapper">
+          <input class="input sign-email" type="email" name="Email Address" placeholder="email@example/com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+          <span class="sign-text">Looks like this is not an email</span>
+        </div>
+        <div class="input-wrapper">
+          <input class="input sign-password" type="password" name="Password" placeholder="Password" required>
+          <span class="sign-text">Password cannot be empty</span>
+        </div>
+
+      </form>
       <div>
-        <a class="sign-button">Claim your free trial</a>
+        <button type="submit" class="sign-button">Claim your free trial</button>
         <p class="sign-small-text">By clicking the button, you are agreeing to our <a class="sign-small-text-two">Terms
             and Services</a></p>
       </div>

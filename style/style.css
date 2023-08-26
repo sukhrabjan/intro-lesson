@@ -61,7 +61,6 @@ margin: 80px 144px;
   opacity: 0.8;
   padding: 5px 15px;
   background: rgba(255, 255, 255, 0.00);
-  margin-bottom: 60px;
   color: #FFF;
   text-align: center;
   font-family: Inter;
@@ -69,21 +68,25 @@ margin: 80px 144px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  
 }
 
 .site-text {
   width: 389px;
+  margin-top: 0;
   color: #FFF;
   font-family: Inter;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 46px;
+  margin-top: 60px;
 }
 
 .site-developer-text {
   width: 347px;
   color: #FFF;
+  margin-top: 0;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -135,7 +138,11 @@ margin: 80px 144px;
 .sign-header {
   margin-bottom: 60px;
 }
-
+.input-wrapper{
+  width: 100%;
+  max-width: 570px;
+  position: relative;
+}
 .sign-up {
   margin-top: 0;
   margin-bottom: 79px;
@@ -146,7 +153,7 @@ margin: 80px 144px;
   font-style: normal;
   font-weight: 600;
   line-height: 42px;
-  /* 131.25% */
+  
 }
 
 .sign-name {
@@ -160,9 +167,8 @@ margin: 80px 144px;
   font-family: Inter;
   font-size: 18px;
   color: #555;
-
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -238,7 +244,6 @@ margin: 80px 144px;
   border: 0;
   margin-top: 0;
   cursor: pointer;
-  margin-bottom: 8px;
   padding: 20px 149px;
   border-radius: 10px;
   background: #655AF2;
@@ -248,6 +253,7 @@ margin: 80px 144px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 8px;
 }
 
 .sign-small-text {
@@ -259,6 +265,7 @@ margin: 80px 144px;
   font-style: normal;
   font-weight: 400;
   line-height: 15px;
+  
 }
 
 .sign-small-text-two {
@@ -271,4 +278,28 @@ margin: 80px 144px;
   font-weight: 500;
   line-height: 15px;
   text-decoration-line: underline;
+}
+.sign-text{
+  position:absolute;
+  top: 40px;
+  left: 100px;
+  right: 4px;
+  display: none;
+  margin-top: 0;
+  color: #F03535;
+text-align: right;
+font-family: Inter;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.input:not(:focus):not(:placeholder-shown):invalid{
+  border-color:red;
+}
+.input:not(:focus):not(:placeholder-shown):valid{
+  border-color:green;
+}
+.sign-up:not(:focus):not(:placeholder-shown):invalid ~ .sign-text{
+display: block;
 }
